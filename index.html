@@ -1,463 +1,314 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>Cut Edge Solutions</title>
-<link rel="icon" href="favicon.png" type="image/png">
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-<link href="css/style.css" rel="stylesheet" type="text/css"> 
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
-<link href="css/animate.css" rel="stylesheet" type="text/css">
- 
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
- 
+	<title>P r o f i l e</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+	<!-- Google Identity Services (Para proteger teléfono y correo) -->
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+	<style>
+		/* Ajustes mínimos respetando la estética nativa de Spectral */
+		.privacy-panel {
+			background: rgba(255, 255, 255, 0.06);
+			border: 1px solid rgba(255, 255, 255, 0.18);
+			border-radius: 6px;
+			padding: 1.75em;
+			margin-top: 1.5em;
+			text-align: left;
+		}
+
+		.revealed-box {
+			display: none;
+			background: rgba(33, 178, 166, 0.15);
+			border: 1px solid #21b2a6;
+			border-radius: 6px;
+			padding: 1.5em;
+			margin-top: 1.5em;
+			text-align: left;
+		}
+
+		.revealed-box p {
+			margin-bottom: 0.5em;
+		}
+
+		.gsi-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 1em;
+			margin-top: 1em;
+		}
+
+		#one.wrapper {
+			min-height: calc(100vh - 3em);
+			/* 3em compensa la barra superior fija */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
 </head>
-<body>
- <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Carousel items -->
-    <div class="carousel-inner">
-        <div class="active item">
-		<div class="caption zoomIn wow animated"> 		 
-              <h2>BOOSTS <br/><strong>Success of your business</strong></h2>
-              </div>
-			  
-		<img class="" src="img/slide1.jpg" alt=""></div>
-        <div class="item">
-		<div class="caption zoomIn wow animated"> 		 			 
-              <h2>Mobile<br/><strong>Apps solutions</strong></h2>
-              </div>
-			  <img class="" src="img/slide2.jpg" alt=""></div>
-        <div class="item">
-		<div class="caption zoomIn wow animated"> 		 			
-              <h2>Web<br/><strong>Solutions</strong></h2>
-             </div><img class="" src="img/slide3.jpg" alt=""></div>
-    </div>
-    <!-- Carousel nav -->
-    <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
-</div>
 
-<!--Header_section-->
-<header id="header_wrapper">
-  <div class="container">
-    <div class="header_box">
-      <!--<div class="logo"><a href="#">Resume</a></div>-->
-	  <nav class="navbar navbar-inverse" role="navigation">
-      <div class="navbar-header">
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        </div>
-	    <div id="main-nav" class="collapse navbar-collapse navStyle">
-			<ul class="nav navbar-nav" id="mainNav">
-			  <li class="active"><a href="#carousel" class="scroll-link">Home</a></li>
-			  <li><a href="#aboutUs" class="scroll-link">About Me</a></li>
-			  <li><a href="#service" class="scroll-link">My Skills</a></li>
-			  <li><a href="#Portfolio" class="scroll-link">Portfolio</a></li> 
-			  <!--<li><a href="#experience" class="scroll-link">Awards</a></li> -->
-			  <li><a href="#contact" class="scroll-link">Contact</a></li>
-			</ul>
-      </div>
-	 </nav>
-    </div>
-  </div>
-</header>
-<!--Header_section--> 
+<body class="landing is-preload">
 
-<section id="aboutUs"><!--Aboutus-->
-<div class="inner_wrapper about-us aboutUs-container fadeInLeft animated wow">
-  <div class="container">
-    <h2>About Me</h2>
-	<h6>A person who loves develop technological solutions</h6>
-    <div class="inner_section">
- <div class="row">
-      <div class="col-md-6"> <img class="img-responsive" src="img/about1.png" align=""> </div>
-      <div class="col-md-6">
-        <h3>My Passion</h3>
-        <p>Lorem ipsum dolor sit amet, quo meis voluptaria, erant bonorum albucius et per, ei placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est. Saepe dolorum constituam ei vel. Te sit malorum ceteros repudiandae, ne tritani adipisci vis.</p> 
-         
-        <p>Lorem ipsum dolor sit amet, voluptaria, erant bonorum albucius et per, ei meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor orci ipsum gravida tortor. 
-									</p>
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
 
-									<ul class="about-us-list">
-										<li class="points">Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li> 
-                                        <li class="points">Sagittis, sem quis lacinia faucibus, orci ipsum gravida </li>
-										<li class="points">Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
-									</ul><!-- /.about-us-list -->
-								 
-      </div>
-    </div>
-	     </div>
-  </div> 
-  </div>
-</section>
-<!--Aboutus--> 
-
-
-<!--Service-->
-<section  id="service">
-  <div class="container">
-    <h2>My Skills</h2>
-	<h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
-    <div class="service_wrapper">
-      <div class="row">
-        <div class="col-md-3">
-		<div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-android"></i></span> </div>
-          <div class="service_block">
-            
-            <h3 class="animated fadeInUp wow">Prototype</h3>
-            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-          </div>
-        </div>
-        <div class="col-md-3"> 
-		<div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-html5"></i></span> </div> 
-		<div class="service_block">
-            <h3 class="animated fadeInUp wow">Design</h3>
-            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
-          </div>
-        </div>
-        <div class="col-md-3">
-		<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-apple"></i></span> </div>
-          <div class="service_block">
-            
-            <h3 class="animated fadeInUp wow">Mobile</h3>
-            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
-          </div>
-        </div>
-		  <div class="col-md-3">
-		<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-twitter"></i></span> </div>
-          <div class="service_block">
-            
-            <h3 class="animated fadeInUp wow">Web</h3>
-            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
-          </div>
-        </div>
-      </div> 
-	 
-    </div>
-  </div>
-</section>
-<!--Service-->  
-
-<!-- Portfolio -->
-<section id="Portfolio" class="content"> 
-  
-  <!-- Container -->
-  <div class="container portfolio_title"> 
-    
-    <!-- Title -->
-    <div class="section-title">
-      <h2>Portfolio</h2>
-	<h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
-	  
-    </div>
-    <!--/Title --> 
-    
-  </div>
-  <!-- Container -->
-  
-  <div class="portfolio-top"></div>
-  
-  <!-- Portfolio Filters -->
-  <div class="portfolio"> 
-    
-    <div id="filters" class="sixteen columns">
-      <ul class="clearfix">
-        <li><a id="all" href="#" data-filter="*" class="active">
-          <h5>All</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".nature">
-          <h5>Commerce</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".wildlife">
-          <h5>Appointments</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".citylife">
-          <h5>Transport</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".animals">
-          <h5>Iot</h5>
-          </a></li> 
-      </ul>
-    </div>
-    <!--/Portfolio Filters --> 
-    
-    <!-- Portfolio Wrapper -->
-    <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">  
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   animals isotope-item effect-oscar">
-	   
-        <div class="portfolio_img"> 
-		<img src="img/portfolio_pic1.jpg"  alt="Portfolio 1"> </div> 
-			<figcaption>		
-				<div>
-				  <a href="img/portfolio_pic1.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item-->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  wildlife isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
-        	<figcaption>		
-				<div>
-				  <a href="img/portfolio_pic2.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  wildlife  isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
-       <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic3.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item--> 
-      
-      <!-- Portfolio Item-->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  citylife  nature web isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
-         <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic4.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-      </figure>
-      <!-- Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  wildlife isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
-       <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic5.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-      </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
-       <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic6.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-      </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item  -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  wildlife web isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>       
-       <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic7.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-       </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   citylife isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>       
-      <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic8.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item --> 
-      
-    </div>
-    <!--/Portfolio Wrapper --> 
-    
-  </div>
-  <!--/Portfolio Filters -->
-  
-  <div class="portfolio_btm"></div>
-  
-  
-  <div id="project_container">
-    <div class="clear"></div>
-    <div id="project_data"></div>
-  </div>
- 
-  
-</section>
-<!--/Portfolio --> 
-<!--
-<section id="experience">
-<div class="container">
-    <section id="news" class="white-bg padding-top-bottom">
-	 <div class="section-title">
-      <h2>Awards</h2>
-	<h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
-	  
-    </div>
-    	<div class="container">
-			<div class="timeline">
-				<div class="date-title">
-					<span>2015</span>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 news-item">
-						<div class="news-content">
-							<div class="date">
-								<p>Oct</p> 
-							</div>
-							<h2 class="news-title">Best Photographer</h2> 
-							<span>Animal Care Group</span>
-							<p>October 2013 – November 2013 (2 months)Menlo Park, CA, United States of America or one who avoids a pain that produces no resultant pleasure…</p>
-							<a class="read-more" href="#">Read More</a>
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="index.html">Miguel Samaniego</a></h1>
+			<nav id="nav">
+				<ul>
+					<li class="special">
+						<a href="#menu" class="menuToggle"><span>Menu</span></a>
+						<div id="menu">
+							<ul>
+								<li><a href="#banner" class="more scrolly">Home</a></li>
+								<li><a href="#one" class="more scrolly">Overview</a></li>
+								<li><a href="#two" class="more scrolly">Focus Areas</a></li>
+								<li><a href="#three" class="more scrolly">Core Stack</a></li>
+								<li><a href="#cta" class="more scrolly">Verified Contact</a></li>
+							</ul>
 						</div>
-					</div>
-					
-					<div class="col-sm-6 news-item right">
-						<div class="news-content">
-							<div class="date">
-								<p>Aug</p> 
-							</div>
-							<h2 class="news-title">1st Winner</h2> 
-							<span>National Awareness</span>
-							<p>October 2013 – November 2013 (2 months)Menlo Park, CA, United States of America or one who avoids a pain that produces no resultant pleasure…</p>
-							<a class="read-more" href="#">Read More</a>
-						</div>
-					</div>
-				</div>
-				 
-				
-				<div class="date-title">
-					<span>2013</span>
-				</div>
-				<div class="row">	
-					<div class="col-sm-6 news-item">
-						<div class="news-content">
-							<div class="date">
-								<p>Aug</p> 
-							</div>
-							<h2 class="news-title">Winner</h2> 
-							<span>Digital World</span>
-							<p>October 2013 – November 2013 (2 months)Menlo Park, CA, United States of America or one who avoids a pain that.</p>
-							<a class="read-more" href="#">Read More</a>
-						</div>
-					</div>
-					
-					<div class="col-sm-6 news-item right">
-						<div class="news-content">
-							<div class="date">
-								<p>Jan</p> 
-							</div>
-							<h2 class="news-title">Best Pic</h2> 
-							<span>Save World Org</span>
-							<p>October 2013 – November 2013 (2 months)Menlo Park, CA, United States of America or one who avoids a pain that produces.</p>
-							<a class="read-more" href="#">Read More</a>
-						</div>
-					</div>
-				</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner -->
+		<section id="banner">
+			<div class="inner">
+				<h2>Miguel Samaniego</h2>
+				<p>Full Stack Engineer<br />
+					• Web • Mobile • Distributed Systems<br />
+					Mexico City</p>
+				<ul class="actions special">
+					<li><a href="#cta" class="button primary scrolly">Request Direct Contact</a></li>
+				</ul>
 			</div>
-		</div>
-	</section>
-</div>				                                                      
-</section> -->
-<!--Footer-->
-<footer class="footer_wrapper" id="contact">
-  <div class="container">
-    <section class="page_section contact" id="contact">
-      <div class="contact_section">
-        <h2>Contact Us</h2>
-	<h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
-     
-      </div>
-      <div class="row">
-        <div class="col-lg-4 wow fadeInLeft">	
-		 <div class="contact_info">
-                            <div class="detail">
-                                <h4>UNIQUE Infoway</h4>
-                                <p>104, Some street, NewYork, USA</p>
-                            </div>
-                            <div class="detail">
-                                <h4>call us</h4>
-                                <p>+1 234 567890</p>
-                            </div>
-                            <div class="detail">
-                                <h4>Email us</h4>
-                                <p>support@sitename.com</p>
-                            </div> 
-                        </div>
-       		  
-			  
-          
-          <ul class="social_links">
-            <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-            <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-            <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-            <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li> 
-          </ul>
-        </div>
-        <div class="col-lg-8 wow fadeInLeft delay-06s">
-          <div class="form">
-            <input class="input-text" type="text" name="" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <input class="input-text" type="text" name="" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-            <input class="input-btn" type="submit" value="send message">
-          </div>
-        </div>
-      </div>
-    </section>
-  </div><!--
-  <div class="container">
-    <div class="footer_bottom"><span>Copyright © reserved,    Template by <a href="http://webthemez.com">WebThemez.com</a>. </span> </div>
-  </div>-->
-</footer>
+			<a href="#one" class="more scrolly">Explore Profile</a>
+		</section>
 
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/jquery.nav.js"></script> 
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
-<script type="text/javascript" src="js/wow.js"></script> 
-<script type="text/javascript" src="js/custom.js"></script>
+		<!-- One: My Skills (3 Pilares: Spring Boot, React, Android) -->
+		<section id="one" class="wrapper style1 special">
+			<div class="inner">
+				<header class="major">
+					<h2>My Skills</h2>
+					<p>Focused engineering expertise across three core platforms:<br />
+						<strong>Spring Boot</strong> for scalable backends, <strong>React</strong> for modern web
+						interfaces, and <strong>Android</strong> for native mobile solutions.
+					</p>
+				</header>
+				<ul class="icons major">
+					<li style="margin: 0 2.2em;">
+						<span class="icon solid fa-leaf major style1"><span class="label">Spring Boot</span></span>
+						<span
+							style="display:block; margin-top:1.6em; font-weight:700; letter-spacing:0.15em; font-size:0.85em; text-transform:uppercase;">Spring
+							Boot</span>
+					</li>
+					<li style="margin: 0 2.2em;">
+						<span class="icon brands fa-react major style2"><span class="label">React</span></span>
+						<span
+							style="display:block; margin-top:1.6em; font-weight:700; letter-spacing:0.15em; font-size:0.85em; text-transform:uppercase;">React</span>
+					</li>
+					<li style="margin: 0 2.2em;">
+						<span class="icon brands fa-android major style3"><span class="label">Android</span></span>
+						<span
+							style="display:block; margin-top:1.6em; font-weight:700; letter-spacing:0.15em; font-size:0.85em; text-transform:uppercase;">Android</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Two: Spotlights (3 Pilares / Proyectos Parciales) -->
+		<section id="two" class="wrapper alt style2">
+			<section class="spotlight">
+				<div class="image"><img src="images/pic01.jpg" alt="Enterprise Microservices" /></div>
+				<div class="content">
+					<h2>Enterprise Microservices<br />
+						& Legacy Modernization</h2>
+					<p>Architecting modular RESTful services in Java (8–21) and Spring Boot. Proven track record
+						decomposing mission-critical monoliths, tuning relational database throughput, and enforcing
+						zero-downtime schema migrations.</p>
+				</div>
+			</section>
+			<section class="spotlight">
+				<div class="image"><img src="images/pic02.jpg" alt="Cloud Native & DevOps" /></div>
+				<div class="content">
+					<h2>Cloud-Native &<br />
+						Container Orchestration</h2>
+					<p>Designing reproducible CI/CD pipelines and containerized deployments on Docker, Kubernetes, and
+						Red Hat OpenShift. Automated integration testing with Testcontainers and static quality gates.
+					</p>
+				</div>
+			</section>
+			<section class="spotlight">
+				<div class="image"><img src="images/pic03.jpg" alt="Event-Driven & Systems" /></div>
+				<div class="content">
+					<h2>Event-Driven &<br />
+						Real-Time Systems</h2>
+					<p>Building asynchronous streaming workflows with Kafka and RabbitMQ, low-latency WebSocket relays
+						in Rust, and modern full-stack administrative interfaces in Angular and TypeScript.</p>
+				</div>
+			</section>
+		</section>
+
+		<!-- Three: Core Technical Capabilities -->
+		<section id="three" class="wrapper style3 special">
+			<div class="inner">
+				<header class="major">
+					<h2>Core Technical Capabilities</h2>
+					<p>Selected technologies used in production environments.<br />
+						Detailed project case studies shared during technical interviews.</p>
+				</header>
+				<ul class="features">
+					<li class="icon solid fa-code">
+						<h3>Backend Engineering</h3>
+						<p>Java 8/17/21, Spring Boot, Spring Security, JPA/Hibernate, Keycloak (OAuth2/OIDC), and
+							RESTful API design.</p>
+					</li>
+					<li class="icon solid fa-database">
+						<h3>Data & Persistence</h3>
+						<p>PostgreSQL, Oracle, SQL Server, query optimization, connection pooling, and versioned
+							migrations with Liquibase & Flyway.</p>
+					</li>
+					<li class="icon solid fa-stream">
+						<h3>Messaging & Streaming</h3>
+						<p>Event-driven architectures using Apache Kafka, RabbitMQ, and asynchronous WebSocket
+							communication.</p>
+					</li>
+					<li class="icon solid fa-dharmachakra">
+						<h3>Containers & Cloud</h3>
+						<p>Docker, Kubernetes, Red Hat OpenShift, Linux administration (Debian), and GitHub Actions
+							automation.</p>
+					</li>
+					<li class="icon solid fa-vial">
+						<h3>Testing & Code Quality</h3>
+						<p>JUnit 5, Testcontainers, Jest, SonarQube static analysis, and clean domain-driven boundaries.
+						</p>
+					</li>
+					<li class="icon solid fa-microchip">
+						<h3>Frontend & Edge Systems</h3>
+						<p>Angular, TypeScript, React Native, native Android (Kotlin), and embedded/CLI tooling in Rust.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- CTA: Privacy Gate con Google Sign-In -->
+		<section id="cta" class="wrapper style4">
+			<div class="inner">
+				<header>
+					<h2>Verified Contact</h2>
+					<p>To prevent automated scraping and protect personal privacy, direct phone and email details are
+						unlocked only after verifying your Google account.</p>
+
+					<!-- Panel de verificación -->
+					<div class="privacy-panel" id="privacy-gate">
+						<p style="margin-bottom: 0.75em; font-size: 0.9em;">
+							<i class="icon solid fa-lock"></i>  <strong>Identity Verification Required</strong>
+						</p>
+						<div class="gsi-wrapper">
+							<!-- Reemplaza YOUR_GOOGLE_CLIENT_ID con tu Client ID de Google Cloud -->
+							<div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com"
+								data-context="signin" data-ux_mode="popup" data-callback="handleCredentialResponse"
+								data-auto_prompt="false">
+							</div>
+							<div class="g_id_signin" data-type="standard" data-shape="rectangular"
+								data-theme="filled_black" data-text="signin_with" data-size="large"
+								data-logo_alignment="left">
+							</div>
+
+							<button type="button" class="button small" onclick="simulateUnlock()">
+								Demo Unlock
+							</button>
+						</div>
+					</div>
+
+					<!-- Datos revelados tras autenticación -->
+					<div class="revealed-box" id="protected-contact-info">
+						<p><i class="icon solid fa-check-circle"></i> Verified visitor: <strong
+								id="visitor-email">recruiter@company.com</strong></p>
+						<p><strong>Direct Phone / WhatsApp:</strong> <span id="real-phone">+52 (55) 0000-0000
+								(Dummy)</span></p>
+						<p><strong>Direct Email:</strong> <span id="real-email">alex.mercer.dev@example.com</span></p>
+					</div>
+				</header>
+				<ul class="actions stacked">
+					<li><a href="https://github.com/username" target="_blank" rel="noopener"
+							class="button fit primary">GitHub Profile</a></li>
+					<li><a href="https://linkedin.com/in/username" target="_blank" rel="noopener"
+							class="button fit">LinkedIn</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://github.com/username" target="_blank" rel="noopener"
+						class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://linkedin.com/in/username" target="_blank" rel="noopener"
+						class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>© Alex Mercer</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts nativos de Spectral -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<!-- Lógica de desbloqueo con Google Identity Services -->
+	<script>
+		async function handleCredentialResponse(response) {
+			try {
+				const payload = JSON.parse(atob(response.credential.split('.')[1]));
+				document.getElementById('visitor-email').textContent = payload.email;
+
+				/*
+				 * En producción, envía response.credential a tu Cloudflare Worker:
+				 * const res = await fetch('https://tu-worker.workers.dev', {
+				 *   method: 'POST',
+				 *   headers: { 'Content-Type': 'application/json' },
+				 *   body: JSON.stringify({ token: response.credential })
+				 * });
+				 * const data = await res.json();
+				 * document.getElementById('real-phone').textContent = data.phone;
+				 * document.getElementById('real-email').textContent = data.email;
+				 */
+
+				document.getElementById('privacy-gate').style.display = 'none';
+				document.getElementById('protected-contact-info').style.display = 'block';
+			} catch (err) {
+				console.error('Verification error:', err);
+			}
+		}
+
+		function simulateUnlock() {
+			document.getElementById('visitor-email').textContent = 'recruiter@company.com (Demo)';
+			document.getElementById('privacy-gate').style.display = 'none';
+			document.getElementById('protected-contact-info').style.display = 'block';
+		}
+	</script>
 
 </body>
+
 </html>

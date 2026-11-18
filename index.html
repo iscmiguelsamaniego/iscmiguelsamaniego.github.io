@@ -2,10 +2,11 @@
 <html>
 
 <head>
-	<title>P r o f i l e</title>
+	<title>Miguel Samaniego — Full Stack & Backend Engineer</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -15,47 +16,6 @@
 
 	<link rel="icon" type="image/png" href="images/favicon.png" />
 
-	<style>
-		/* Ajustes mínimos respetando la estética nativa de Spectral */
-		.privacy-panel {
-			background: rgba(255, 255, 255, 0.06);
-			border: 1px solid rgba(255, 255, 255, 0.18);
-			border-radius: 6px;
-			padding: 1.75em;
-			margin-top: 1.5em;
-			text-align: left;
-		}
-
-		.revealed-box {
-			display: none;
-			background: rgba(33, 178, 166, 0.15);
-			border: 1px solid #21b2a6;
-			border-radius: 6px;
-			padding: 1.5em;
-			margin-top: 1.5em;
-			text-align: left;
-		}
-
-		.revealed-box p {
-			margin-bottom: 0.5em;
-		}
-
-		.gsi-wrapper {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			gap: 1em;
-			margin-top: 1em;
-		}
-
-		#one.wrapper {
-			min-height: calc(100vh - 3em);
-			/* 3em compensa la barra superior fija */
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-	</style>
 </head>
 
 <body class="landing is-preload">
@@ -73,9 +33,9 @@
 						<div id="menu">
 							<ul>
 								<li><a href="#banner" class="more scrolly">Home</a></li>
-								<li><a href="#one" class="more scrolly">Overview</a></li>
-								<li><a href="#two" class="more scrolly">Focus Areas</a></li>
-								<li><a href="#three" class="more scrolly">Core Stack</a></li>
+								<li><a href="#one" class="more scrolly">My Skills</a></li>
+								<li><a href="#two" class="more scrolly">Engineering Focus</a></li>
+								<li><a href="#three" class="more scrolly">Capabilities</a></li>
 								<li><a href="#cta" class="more scrolly">Verified Contact</a></li>
 							</ul>
 						</div>
@@ -89,7 +49,7 @@
 			<div class="inner">
 				<h2>Miguel Samaniego</h2>
 				<p>Full Stack Engineer<br />
-					• Web • Mobile • Distributed Systems<br />
+					Web • Mobile • Distributed Systems<br />
 					Mexico City</p>
 				<ul class="actions special">
 					<li><a href="#cta" class="button primary scrolly">Request Direct Contact</a></li>
@@ -109,55 +69,438 @@
 					</p>
 				</header>
 				<ul class="icons major">
-					<li style="margin: 0 2.2em;">
+					<li class="skill-pillar-item">
 						<span class="icon solid fa-leaf major style1"><span class="label">Spring Boot</span></span>
-						<span
-							style="display:block; margin-top:1.6em; font-weight:700; letter-spacing:0.15em; font-size:0.85em; text-transform:uppercase;">Spring
-							Boot</span>
+						<span class="skill-pillar-label">Spring Boot</span>
 					</li>
-					<li style="margin: 0 2.2em;">
+					<li class="skill-pillar-item">
 						<span class="icon brands fa-react major style2"><span class="label">React</span></span>
-						<span
-							style="display:block; margin-top:1.6em; font-weight:700; letter-spacing:0.15em; font-size:0.85em; text-transform:uppercase;">React</span>
+						<span class="skill-pillar-label">React</span>
 					</li>
-					<li style="margin: 0 2.2em;">
+					<li class="skill-pillar-item">
 						<span class="icon brands fa-android major style3"><span class="label">Android</span></span>
-						<span
-							style="display:block; margin-top:1.6em; font-weight:700; letter-spacing:0.15em; font-size:0.85em; text-transform:uppercase;">Android</span>
+						<span class="skill-pillar-label">Android</span>
 					</li>
 				</ul>
 			</div>
 		</section>
 
-		<!-- Two: Spotlights (3 Pilares / Proyectos Parciales) -->
+		<!-- Two: Spotlights -->
 		<section id="two" class="wrapper alt style2">
-			<section class="spotlight">
-				<div class="image"><img src="images/pic01.jpg" alt="Enterprise Microservices" /></div>
+			<!-- Spotlight 1: Spring Boot Backend + Galería Interactiva -->
+			<section class="spotlight full-screen-spot">
+				<div class="image">
+					<div class="backend-gallery-stage" id="sb-gallery">
+						<!-- Slide 1: Diagrama SVG de Arquitectura Cloud-Native -->
+						<div class="backend-slide active mock-panel" data-slide="0">
+							<div class="mock-header">
+								<span class="mock-dot red"></span>
+								<span class="mock-dot yellow"></span>
+								<span class="mock-dot green"></span>
+								<span class="mock-title">architecture-diagram.svg — Cloud-Native Flow</span>
+							</div>
+							<svg viewBox="0 0 520 300" class="arch-svg" xmlns="http://www.w3.org/2000/svg">
+								<!-- Líneas de conexión -->
+								<line x1="115" y1="150" x2="185" y2="150" stroke="#21b2a6" stroke-width="2"
+									stroke-dasharray="4 4" />
+								<line x1="325" y1="125" x2="385" y2="85" stroke="#00f0ff" stroke-width="2" />
+								<line x1="325" y1="150" x2="385" y2="150" stroke="#00ffcc" stroke-width="2" />
+								<line x1="325" y1="175" x2="385" y2="215" stroke="#76ddff" stroke-width="2" />
+
+								<!-- Nodo 1: Client / API Gateway -->
+								<rect x="20" y="115" width="95" height="70" rx="8" fill="#263038" stroke="#64748b"
+									stroke-width="1.5" />
+								<text x="67" y="145" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle"
+									font-family="monospace">API Gateway</text>
+								<text x="67" y="163" fill="#94a3b8" font-size="9" text-anchor="middle"
+									font-family="monospace">OAuth2 / JWT</text>
+
+								<!-- Nodo 2: Spring Boot Core -->
+								<rect x="185" y="100" width="140" height="100" rx="10" fill="#1b3b3a" stroke="#21b2a6"
+									stroke-width="2" />
+								<text x="255" y="138" fill="#00ffcc" font-size="12" font-weight="bold"
+									text-anchor="middle" font-family="monospace">Spring Boot 3</text>
+								<text x="255" y="156" fill="#e2e8f0" font-size="10" text-anchor="middle"
+									font-family="monospace">Java 21 • REST API</text>
+								<text x="255" y="174" fill="#21b2a6" font-size="9" text-anchor="middle"
+									font-family="monospace">[OpenShift / AWS / GCP]</text>
+
+								<!-- Nodo 3: OpenAI API -->
+								<rect x="385" y="55" width="115" height="52" rx="8" fill="#263038" stroke="#00f0ff"
+									stroke-width="1.5" />
+								<text x="442" y="79" fill="#00f0ff" font-size="10" font-weight="bold"
+									text-anchor="middle" font-family="monospace">OpenAI API</text>
+								<text x="442" y="94" fill="#94a3b8" font-size="8.5" text-anchor="middle"
+									font-family="monospace">Tool Calling / NLP</text>
+
+								<!-- Nodo 4: PostgreSQL -->
+								<rect x="385" y="124" width="115" height="52" rx="8" fill="#263038" stroke="#00ffcc"
+									stroke-width="1.5" />
+								<text x="442" y="148" fill="#00ffcc" font-size="10" font-weight="bold"
+									text-anchor="middle" font-family="monospace">PostgreSQL</text>
+								<text x="442" y="163" fill="#94a3b8" font-size="8.5" text-anchor="middle"
+									font-family="monospace">ACID • Liquibase</text>
+
+								<!-- Nodo 5: Kafka / Events -->
+								<rect x="385" y="193" width="115" height="52" rx="8" fill="#263038" stroke="#76ddff"
+									stroke-width="1.5" />
+								<text x="442" y="217" fill="#76ddff" font-size="10" font-weight="bold"
+									text-anchor="middle" font-family="monospace">Kafka Broker</text>
+								<text x="442" y="232" fill="#94a3b8" font-size="8.5" text-anchor="middle"
+									font-family="monospace">Async Events</text>
+							</svg>
+						</div>
+
+						<!-- Slide 2: Mockup de API REST + OpenAI Booking Payload -->
+						<div class="backend-slide mock-panel" data-slide="1">
+							<div class="mock-header">
+								<span class="mock-dot red"></span>
+								<span class="mock-dot yellow"></span>
+								<span class="mock-dot green"></span>
+								<span class="mock-title">POST /api/v1/appointments/ai-schedule • 200 OK (142ms)</span>
+							</div>
+							<pre class="mock-code"><code>{
+  "intent": "BOOK_APPOINTMENT",
+  "ai_orchestrator": "gpt-4o-mini (function_call)",
+  "slot_validation": {
+    "requested": "2026-11-20T10:00:00-06:00",
+    "conflict_check": "PASSED",
+    "db_lock": "OPTIMISTIC_OK"
+  },
+  "appointment": {
+    "id": "apt_98f4c210",
+    "status": "CONFIRMED",
+    "notification_event": "published -> kafka.appointments"
+  }
+}</code></pre>
+						</div>
+
+						<!-- Slide 3: Mockup de Terminal Cloud / OpenShift / AWS / GCP -->
+						<div class="backend-slide mock-panel" data-slide="2">
+							<div class="mock-header">
+								<span class="mock-dot red"></span>
+								<span class="mock-dot yellow"></span>
+								<span class="mock-dot green"></span>
+								<span class="mock-title">bash — OpenShift / Cloud Cluster Status</span>
+							</div>
+							<pre class="mock-code"><code>$ oc get pods -n prod-core-api
+NAME                                READY   STATUS    RESTARTS   AGE
+booking-service-7d9f8b6c4-x92kp     1/1     Running   0          14d
+booking-service-7d9f8b6c4-m41zt     1/1     Running   0          14d
+ai-gateway-worker-6c8d9f5b2-q77ln   1/1     Running   0          14d
+
+$ curl -s https://api.cloud.internal/actuator/health | jq .
+{
+  "status": "UP",
+  "components": {
+    "db": { "status": "UP", "details": { "database": "PostgreSQL" } },
+    "openai": { "status": "UP", "latencyMs": 118 },
+    "kafka": { "status": "UP" }
+  }
+}</code></pre>
+						</div>
+
+						<!-- Controles de la galería -->
+						<!-- Controles de la galería -->
+						<div class="gallery-controls">
+							<button type="button" class="gallery-tab active"
+								onclick="switchGallerySlide('sb-gallery', 0, this)">Architecture</button>
+							<button type="button" class="gallery-tab"
+								onclick="switchGallerySlide('sb-gallery', 1, this)">AI & Data API</button>
+							<button type="button" class="gallery-tab"
+								onclick="switchGallerySlide('sb-gallery', 2, this)">Cloud Deploy</button>
+						</div>
+					</div>
+				</div>
 				<div class="content">
-					<h2>Enterprise Microservices<br />
-						& Legacy Modernization</h2>
-					<p>Architecting modular RESTful services in Java (8–21) and Spring Boot. Proven track record
-						decomposing mission-critical monoliths, tuning relational database throughput, and enforcing
-						zero-downtime schema migrations.</p>
+					<h2>Spring Boot & Cloud-Native<br />
+						Backend Engineering</h2>
+					<p>Designing resilient, high-throughput microservices in <strong>Java (17/21) & Spring Boot</strong>
+						deployed across <strong>OpenShift, AWS, and Google Cloud</strong>.</p>
+					<p>Experienced in building event-driven data pipelines, relational database optimization, and
+						intelligent REST APIs—including real-time <strong>OpenAI tool-calling workflows</strong> for
+						automated appointment scheduling and transactional data processing.</p>
+					<p class="tech-tags-line">Java 21 • Spring Boot • OpenShift • AWS / GCP • OpenAI API</p>
 				</div>
 			</section>
-			<section class="spotlight">
-				<div class="image"><img src="images/pic02.jpg" alt="Cloud Native & DevOps" /></div>
+
+			<!-- Spotlight 2 -->
+			<!-- Spotlight 2: React + Vite (Galería derecha con Overlay estilo Reels) -->
+			<section class="spotlight full-screen-spot">
+				<div class="image">
+					<div class="backend-gallery-stage" id="react-gallery">
+
+						<!-- Slide 1: Fleet Management & Live Map Tracking -->
+						<div class="backend-slide active mock-panel" data-slide="0">
+							<div class="mock-header">
+								<span class="mock-dot red"></span>
+								<span class="mock-dot yellow"></span>
+								<span class="mock-dot green"></span>
+								<span class="mock-title">fleet-ops.app — Live GPS & Unit Dispatch</span>
+							</div>
+							<div class="ui-mock-body">
+								<div class="ui-grid-2">
+									<!-- Mapa interactivo SVG -->
+									<div class="ui-card">
+										<span class="ui-badge">LIVE TELEMETRY</span>
+										<svg viewBox="0 0 220 130" width="100%" xmlns="http://www.w3.org/2000/svg">
+											<rect width="220" height="130" rx="4" fill="#131920" />
+											<path d="M10 30 L90 45 L150 20 L210 55" stroke="#2d3b48" stroke-width="4"
+												fill="none" />
+											<path d="M25 110 L85 75 L140 95 L200 70" stroke="#2d3b48" stroke-width="4"
+												fill="none" />
+											<path d="M40 95 L95 55 L165 65" stroke="#21b2a6" stroke-width="2.5"
+												stroke-dasharray="4 3" fill="none" />
+											<circle cx="40" cy="95" r="5" fill="#00ffcc" />
+											<circle cx="95" cy="55" r="5" fill="#00f0ff" />
+											<circle cx="165" cy="65" r="6" fill="#ed4933" />
+										</svg>
+									</div>
+									<!-- Estado de unidades -->
+									<div class="ui-card">
+										<span class="ui-badge">ACTIVE FLEET (24)</span>
+										<div class="ui-list-row"><span>UNIT-104</span><span style="color:#00ffcc;">EN
+												ROUTE</span></div>
+										<div class="ui-list-row"><span>UNIT-208</span><span
+												style="color:#00f0ff;">AVAILABLE</span></div>
+										<div class="ui-list-row"><span>UNIT-312</span><span
+												style="color:#ffbd2e;">MAINT.</span></div>
+										<div class="ui-list-row"><span>UNIT-419</span><span style="color:#00ffcc;">EN
+												ROUTE</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="reel-caption">
+								<h4>Fleet Control & Telemetry</h4>
+								<p>Real-time vehicle tracking dashboard built with React, Vite, and interactive maps.
+									Monitors unit availability, route geofencing, driver shifts, and preventive
+									maintenance logs.</p>
+							</div>
+						</div>
+
+						<!-- Slide 2: Appointment & Booking System -->
+						<div class="backend-slide mock-panel" data-slide="1">
+							<div class="mock-header">
+								<span class="mock-dot red"></span>
+								<span class="mock-dot yellow"></span>
+								<span class="mock-dot green"></span>
+								<span class="mock-title">scheduler.app — Automated Slot & Calendar UI</span>
+							</div>
+							<div class="ui-mock-body">
+								<div class="ui-grid-2">
+									<div class="ui-card">
+										<span class="ui-badge">NOV 2026 • SLOTS</span>
+										<div class="ui-list-row"><span>09:00 AM</span><span
+												style="color:#64748b;">BOOKED</span></div>
+										<div class="ui-list-row"><span>10:30 AM</span><span
+												style="color:#00ffcc;">OPEN</span></div>
+										<div class="ui-list-row"><span>12:00 PM</span><span
+												style="color:#00ffcc;">OPEN</span></div>
+										<div class="ui-list-row"><span>03:00 PM</span><span
+												style="color:#ff8a7a;">LOCKED</span></div>
+									</div>
+									<div class="ui-card">
+										<span class="ui-badge">SYNC ENGINE</span>
+										<div class="ui-list-row"><span>Timezone</span><span>America/Mexico_City</span>
+										</div>
+										<div class="ui-list-row"><span>Reminders</span><span>WhatsApp / Email</span>
+										</div>
+										<div class="ui-list-row"><span>Conflict Guard</span><span>Active</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="reel-caption">
+								<h4>Smart Appointment Scheduler</h4>
+								<p>Multi-tenant booking interface with dynamic time-slot locking, automated reminders,
+									and calendar synchronization—connected to REST & AI scheduling backends.</p>
+							</div>
+						</div>
+
+						<!-- Slide 3: On-Demand Trades & Local Services Marketplace -->
+						<div class="backend-slide mock-panel" data-slide="2">
+							<div class="mock-header">
+								<span class="mock-dot red"></span>
+								<span class="mock-dot yellow"></span>
+								<span class="mock-dot green"></span>
+								<span class="mock-title">oficios-pro.app — On-Demand Local Specialists</span>
+							</div>
+							<div class="ui-mock-body">
+								<div class="ui-grid-2">
+									<div class="ui-card">
+										<span class="ui-badge">NEARBY SPECIALISTS</span>
+										<div class="ui-list-row"><span>Plumbing • 1.2 km</span><span
+												style="color:#00ffcc;">★ 4.9</span></div>
+										<div class="ui-list-row"><span>Electrical • 2.4 km</span><span
+												style="color:#00ffcc;">★ 4.8</span></div>
+										<div class="ui-list-row"><span>Locksmith • 0.8 km</span><span
+												style="color:#00ffcc;">★ 5.0</span></div>
+										<div class="ui-list-row"><span>HVAC Tech • 3.1 km</span><span
+												style="color:#00f0ff;">★ 4.7</span></div>
+									</div>
+									<div class="ui-card">
+										<span class="ui-badge warn">ACTIVE REQUEST</span>
+										<div class="ui-list-row"><span>Trade</span><span>Emergency Plumber</span></div>
+										<div class="ui-list-row"><span>ETA</span><span>18 mins</span></div>
+										<div class="ui-list-row"><span>Escrow</span><span>Verified</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="reel-caption">
+								<h4>On-Demand Trades Marketplace</h4>
+								<p>Uber-style service platform connecting homeowners with verified plumbers,
+									electricians, and skilled tradespeople using geolocation matching, instant quotes,
+									and live arrival status.</p>
+							</div>
+						</div>
+
+						<!-- Controles de la galería -->
+						<div class="gallery-controls">
+							<button type="button" class="gallery-tab active"
+								onclick="switchGallerySlide('react-gallery', 0, this)">Fleet Control</button>
+							<button type="button" class="gallery-tab"
+								onclick="switchGallerySlide('react-gallery', 1, this)">Appointments</button>
+							<button type="button" class="gallery-tab"
+								onclick="switchGallerySlide('react-gallery', 2, this)">Trades App</button>
+						</div>
+					</div>
+				</div>
+
 				<div class="content">
-					<h2>Cloud-Native &<br />
-						Container Orchestration</h2>
-					<p>Designing reproducible CI/CD pipelines and containerized deployments on Docker, Kubernetes, and
-						Red Hat OpenShift. Automated integration testing with Testcontainers and static quality gates.
+					<h2>React & Vite<br />
+						Modern Web Applications</h2>
+					<p>Building fast, responsive, and modular single-page applications using <strong>React, Vite, and
+							TypeScript</strong> with clean state management and real-time API consumption.</p>
+					<p>Delivered production interfaces across diverse domains—from <strong>GPS fleet management</strong>
+						and <strong>automated appointment scheduling</strong> to <strong>on-demand local service
+							marketplaces</strong> connecting skilled tradespeople with customers.</p>
+					<p class="tech-tags-line">React • Vite • TypeScript • Interactive Maps • REST / WebSockets</p>
+				</div>
+			</section>
+
+			<!-- Spotlight 3 -->
+			<!-- Spotlight 3: Android & Mobile Engineering (Galería estilo Smartphone) -->
+			<section class="spotlight full-screen-spot">
+				<div class="image">
+					<div class="backend-gallery-stage" id="android-gallery">
+
+						<!-- Slide 1: Real-Time Voice AI Assistant (Kotlin + WebSockets) -->
+						<div class="backend-slide active phone-slide" data-slide="0">
+							<div class="phone-frame">
+								<div class="phone-status-bar">
+									<span>09:41</span>
+									<span class="phone-notch"></span>
+									<span>5G • 100%</span>
+								</div>
+								<div class="phone-screen-body">
+									<div class="phone-app-title">Voice Booking AI</div>
+									<div class="phone-widget" style="text-align:center;">
+										<span class="ui-badge">STREAMING AUDIO</span>
+										<div class="voice-wave">
+											<span></span><span></span><span></span><span></span><span></span>
+										</div>
+										<div style="color:#00ffcc;">"Schedule Friday at 10 AM"</div>
+									</div>
+									<div class="phone-widget">
+										<div class="ui-list-row"><span>Transport</span><span>WebSocket PCM</span></div>
+										<div class="ui-list-row"><span>Latency</span><span style="color:#00ffcc;">135
+												ms</span></div>
+										<div class="ui-list-row"><span>Status</span><span>Confirmed</span></div>
+									</div>
+								</div>
+								<div class="reel-caption">
+									<h4>Real-Time Voice AI App</h4>
+									<p>Native Kotlin Android client streaming low-latency bidirectional audio over
+										WebSockets to a Rust & OpenAI Realtime backend for hands-free appointment
+										booking.</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slide 2: Weather Now! (React Native / Expo Utility) -->
+						<div class="backend-slide phone-slide" data-slide="1">
+							<div class="phone-frame">
+								<div class="phone-status-bar">
+									<span>09:41</span>
+									<span class="phone-notch"></span>
+									<span>Wi-Fi</span>
+								</div>
+								<div class="phone-screen-body">
+									<div class="phone-app-title">Wheath3r Now!</div>
+									<div class="phone-widget" style="text-align:center;">
+										<span class="ui-badge">MEXICO CITY • LIVE</span>
+										<div style="font-size:2.1em; font-weight:bold; color:#fff; margin:0.15em 0;">
+											22°C</div>
+										<div style="color:#76ddff;">Partly Cloudy • UV 6</div>
+									</div>
+									<div class="phone-widget">
+										<div class="ui-list-row"><span>12:00 PM</span><span>24°C • 10% rain</span></div>
+										<div class="ui-list-row"><span>03:00 PM</span><span>25°C • 15% rain</span></div>
+										<div class="ui-list-row"><span>06:00 PM</span><span>19°C • 40% rain</span></div>
+									</div>
+								</div>
+								<div class="reel-caption">
+									<h4>Wheath3r Now! Utility</h4>
+									<p>Lightweight cross-platform weather app built with React Native & Expo, published
+										on Google Play Console with smart caching, geolocation, and minimal battery
+										footprint.</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slide 3: Field Dispatch & Mobile Telemetry -->
+						<div class="backend-slide phone-slide" data-slide="2">
+							<div class="phone-frame">
+								<div class="phone-status-bar">
+									<span>09:41</span>
+									<span class="phone-notch"></span>
+									<span>GPS ON</span>
+								</div>
+								<div class="phone-screen-body">
+									<div class="phone-app-title">Driver & Field Ops</div>
+									<div class="phone-widget">
+										<span class="ui-badge warn">ACTIVE DISPATCH</span>
+										<div class="ui-list-row"><span>Order</span><span>#SRV-8841</span></div>
+										<div class="ui-list-row"><span>Distance</span><span>1.4 km</span></div>
+										<div class="ui-list-row"><span>Offline Queue</span><span
+												style="color:#00ffcc;">Synced</span></div>
+									</div>
+									<div class="phone-widget">
+										<div class="ui-list-row"><span>Push Alerts</span><span>FCM Active</span></div>
+										<div class="ui-list-row"><span>Auth</span><span>Biometric / JWT</span></div>
+									</div>
+								</div>
+								<div class="reel-caption">
+									<h4>Offline-First Field Client</h4>
+									<p>Android companion app for drivers and field specialists featuring background GPS
+										telemetry, Firebase push notifications, biometric login, and local SQLite sync.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Controles de la galería -->
+						<div class="gallery-controls">
+							<button type="button" class="gallery-tab active"
+								onclick="switchGallerySlide('android-gallery', 0, this)">Voice AI</button>
+							<button type="button" class="gallery-tab"
+								onclick="switchGallerySlide('android-gallery', 1, this)">Weather App</button>
+							<button type="button" class="gallery-tab"
+								onclick="switchGallerySlide('android-gallery', 2, this)">Field Ops</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="content">
+					<h2>Android & Cross-Platform<br />
+						Mobile Development</h2>
+					<p>Developing native <strong>Android (Kotlin)</strong> and cross-platform <strong>React Native /
+							Expo</strong> applications engineered for low latency, offline resilience, and seamless
+						backend integration.</p>
+					<p>Built mobile solutions ranging from <strong>real-time WebSocket voice assistants</strong> and
+						<strong>Google Play utilities</strong> to <strong>GPS-enabled field service apps</strong> with
+						push notifications and local persistence.
 					</p>
-				</div>
-			</section>
-			<section class="spotlight">
-				<div class="image"><img src="images/pic03.jpg" alt="Event-Driven & Systems" /></div>
-				<div class="content">
-					<h2>Event-Driven &<br />
-						Real-Time Systems</h2>
-					<p>Building asynchronous streaming workflows with Kafka and RabbitMQ, low-latency WebSocket relays
-						in Rust, and modern full-stack administrative interfaces in Angular and TypeScript.</p>
+					<p class="tech-tags-line">Android • Kotlin • React Native • WebSockets • Google Play</p>
 				</div>
 			</section>
 		</section>
@@ -167,39 +510,38 @@
 			<div class="inner">
 				<header class="major">
 					<h2>Core Technical Capabilities</h2>
-					<p>Selected technologies used in production environments.<br />
-						Detailed project case studies shared during technical interviews.</p>
+					<p>Production-proven technologies aligned with my core stack.<br />
+						Detailed architectural case studies shared during technical interviews.</p>
 				</header>
 				<ul class="features">
-					<li class="icon solid fa-code">
-						<h3>Backend Engineering</h3>
-						<p>Java 8/17/21, Spring Boot, Spring Security, JPA/Hibernate, Keycloak (OAuth2/OIDC), and
-							RESTful API design.</p>
+					<li class="icon solid fa-leaf">
+						<h3>Spring Boot & Backend</h3>
+						<p>Java (8–21), Spring Boot, Spring Security (OAuth2/Keycloak), REST APIs, and OpenAI
+							tool-calling workflows.</p>
 					</li>
 					<li class="icon solid fa-database">
 						<h3>Data & Persistence</h3>
-						<p>PostgreSQL, Oracle, SQL Server, query optimization, connection pooling, and versioned
-							migrations with Liquibase & Flyway.</p>
-					</li>
-					<li class="icon solid fa-stream">
-						<h3>Messaging & Streaming</h3>
-						<p>Event-driven architectures using Apache Kafka, RabbitMQ, and asynchronous WebSocket
-							communication.</p>
+						<p>PostgreSQL, MongoDB, Oracle, query tuning, connection pooling, and schema versioning with
+							Liquibase & Flyway.</p>
 					</li>
 					<li class="icon solid fa-dharmachakra">
-						<h3>Containers & Cloud</h3>
-						<p>Docker, Kubernetes, Red Hat OpenShift, Linux administration (Debian), and GitHub Actions
-							automation.</p>
+						<h3>Cloud & Containers</h3>
+						<p>Red Hat OpenShift, AWS, Google Cloud, Docker, Kubernetes, and automated CI/CD pipelines.</p>
 					</li>
-					<li class="icon solid fa-vial">
-						<h3>Testing & Code Quality</h3>
-						<p>JUnit 5, Testcontainers, Jest, SonarQube static analysis, and clean domain-driven boundaries.
+					<li class="icon solid fa-stream">
+						<h3>Streaming & Quality</h3>
+						<p>Apache Kafka, RabbitMQ, low-latency WebSockets, JUnit 5, Testcontainers, and SonarQube gates.
 						</p>
 					</li>
-					<li class="icon solid fa-microchip">
-						<h3>Frontend & Edge Systems</h3>
-						<p>Angular, TypeScript, React Native, native Android (Kotlin), and embedded/CLI tooling in Rust.
-						</p>
+					<li class="icon brands fa-react">
+						<h3>React & Vite Web</h3>
+						<p>React, Vite, TypeScript, interactive GPS maps, real-time dashboards, and responsive UI
+							architecture.</p>
+					</li>
+					<li class="icon brands fa-android">
+						<h3>Android & Mobile</h3>
+						<p>Native Android (Kotlin), React Native / Expo, WebSocket audio streaming, push notifications,
+							and offline sync.</p>
 					</li>
 				</ul>
 			</div>
@@ -215,7 +557,7 @@
 
 					<!-- Panel de verificación -->
 					<div class="privacy-panel" id="privacy-gate">
-						<p style="margin-bottom: 0.75em; font-size: 0.9em;">
+						<p class="privacy-panel-title">
 							<i class="icon solid fa-lock"></i>  <strong>Identity Verification Required</strong>
 						</p>
 						<div class="gsi-wrapper">
@@ -241,13 +583,13 @@
 								id="visitor-email">recruiter@company.com</strong></p>
 						<p><strong>Direct Phone / WhatsApp:</strong> <span id="real-phone">+52 (55) 0000-0000
 								(Dummy)</span></p>
-						<p><strong>Direct Email:</strong> <span id="real-email">alex.mercer.dev@example.com</span></p>
+						<p><strong>Direct Email:</strong> <span id="real-email">contact@example.com</span></p>
 					</div>
 				</header>
 				<ul class="actions stacked">
-					<li><a href="https://github.com/username" target="_blank" rel="noopener"
+					<li><a href="https://github.com/iscmiguelsamaniego" target="_blank" rel="noopener"
 							class="button fit primary">GitHub Profile</a></li>
-					<li><a href="https://linkedin.com/in/username" target="_blank" rel="noopener"
+					<li><a href="https://www.linkedin.com/in/iscsamaniego/" target="_blank" rel="noopener"
 							class="button fit">LinkedIn</a></li>
 				</ul>
 			</div>
@@ -256,13 +598,13 @@
 		<!-- Footer -->
 		<footer id="footer">
 			<ul class="icons">
-				<li><a href="https://github.com/username" target="_blank" rel="noopener"
+				<li><a href="https://github.com/iscmiguelsamaniego" target="_blank" rel="noopener"
 						class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				<li><a href="https://linkedin.com/in/username" target="_blank" rel="noopener"
+				<li><a href="https://www.linkedin.com/in/iscsamaniego/" target="_blank" rel="noopener"
 						class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 			</ul>
 			<ul class="copyright">
-				<li>© Alex Mercer</li>
+				<li>© Miguel Samaniego</li>
 				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 			</ul>
 		</footer>
@@ -278,8 +620,19 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 
-	<!-- Lógica de desbloqueo con Google Identity Services -->
+	<!-- Lógica de galería y desbloqueo con Google Identity Services -->
 	<script>
+		function switchGallerySlide(galleryId, index, btn) {
+			const container = document.getElementById(galleryId);
+			container.querySelectorAll('.backend-slide').forEach(slide => {
+				slide.classList.toggle('active', Number(slide.dataset.slide) === index);
+			});
+			container.querySelectorAll('.gallery-tab').forEach(tab => {
+				tab.classList.remove('active');
+			});
+			btn.classList.add('active');
+		}
+
 		async function handleCredentialResponse(response) {
 			try {
 				const payload = JSON.parse(atob(response.credential.split('.')[1]));
